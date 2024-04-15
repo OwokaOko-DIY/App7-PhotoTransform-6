@@ -28,23 +28,23 @@
   The goal of this code is to create a website that can identify the blue intensities of an uploaded image.
  
   Known Issues:
-  "Processed image" title has white spots covering it at times. Was not able to fix the issue.
+  Website function is now not working. "Processed image" title has white spots covering it at times. Was not able to fix the issue.
 -->
 
  <!--meta section detailing important information such as how the app will be displayed and which devices are capable of opening it-->
  <head>
-  <meta charset="utf-8">
-  <title>Photo Transform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=.7">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+     <meta charset="utf-8">
+     <title>Photo Transform</title>
+     <meta name="viewport" content="width=device-width, initial-scale=.7">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+     <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
- <script
-  //Javacript code detailing timestamp for time of last modification; helps with Github delay time; shows in Javascript browser console
-  var docMod = document.lastModified; // gets last modified date and time of the index.html file
-  console.log("This file last modified  " + docMod); // displays last modified date and time in the javascipt browser console 
+     <script
+         //Javacript code detailing timestamp for time of last modification; helps with Github delay time; shows in Javascript browser console
+         var docMod = document.lastModified; // gets last modified date and time of the index.html file
+         console.log("This file last modified  " + docMod); // displays last modified date and time in the javascipt browser console 
 
 /* detectVerticalSquash & drawImageIOSFix = are functions that are critical due to a flaw in the iPhone camera software that squishes any photos displayed on an HTML5 canvas element. https://github.com/stomita/ios-imagefile-megapixel
 */
