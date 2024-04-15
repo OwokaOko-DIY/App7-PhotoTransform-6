@@ -98,6 +98,19 @@
           drawImageIOSFix(context,img, 0, 0, img.naturalWidth, img.naturalHeight, 0, 0, 600, 500);
 
           /*  +++++++++++++++ BEGIN IMAGE PROCESSING +++++++++++++++ */
+
+          var canvas2 = document.getElementById('dataCanvas');
+              var context2 = canvas2.getContext("2d");
+              var imageData = context.getImageData(0, 0, img.naturalWidth, img.naturalHeight);
+              var data = imageData.data;
+              for (var i = 0; i < data.length; i += 4) {
+                data[i] = 0; 
+                // removes red intensity from photo
+                data[i + 1] = 0; 
+                // removes green intensity from photo
+              }
+              context2.putImageData(imageData, 0, 0);
+         
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
